@@ -7,6 +7,7 @@ class Income {
     public:
         Income( ) = default;
         Income(double amt, Account addTo);
+        Income(double amt, Account addTo, bool oneTime);
         Income(string name, double amt, Account addTo, bool oneTime);
         Income(string name, double amt, Account addTo, bool oneTime, string recurringType);
 
