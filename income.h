@@ -11,8 +11,9 @@ class Income {
         Income(string name, double amt, Account addTo, bool oneTime);
         Income(string name, double amt, Account addTo, bool oneTime, string recurringType);
 
-        bool enoughDays( int currentDay ) const;
+        bool enoughDays( int currentDay );
         void perform( );
+        void calcDays( );
 
         double getAmount() const;
 

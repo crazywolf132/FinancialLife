@@ -11,8 +11,9 @@ class Expense {
         Expense(string name, double amount, Account takeFrom, bool oneTime);
         Expense(string name, double amount, Account takeFrom, bool oneTime, string recurringType);
 
-        bool enoughDays( int currentDay ) const;
+        bool enoughDays( int currentDay );
         void perform( );
+        void calcDays( );
 
         double getAmount() const;
 
