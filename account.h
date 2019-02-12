@@ -9,6 +9,9 @@ class Account {
         Account(string name, double amount);
 
         string getName() const;
+
+        double getAvaliable() const;
+
         void minusAmount(double amt);
         void addAmount(double amt);
 

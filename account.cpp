@@ -15,3 +15,7 @@ void Account::addAmount(double amt) {
 string Account::getName() const {
     return name;
 }
+
+double Account::getAvaliable() const {
+    return amount;
+}

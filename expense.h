@@ -11,6 +11,11 @@ class Expense {
         Expense(string name, double amount, Account takeFrom, bool oneTime);
         Expense(string name, double amount, Account takeFrom, bool oneTime, string recurringType);
 
+        void enoughDays( int currentDay ) const;
+        void perform( );
+
+        double getAmount() const;
+
     private:
         string name = "";
         double amount = 0.00;
@@ -18,4 +23,6 @@ class Expense {
         string recurringType = "monthly";
         Account takeFrom = Account( );
 
+        int timesRun = 0;
+        bool hasRun = false;
 };
